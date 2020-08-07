@@ -30,11 +30,7 @@ class ViewModel {
     
     func plusButtonPressed() {
         let currentNumSt = relayNum.value
-        guard let currentNum = Int(currentNumSt) else {
-            print("return")
-            return
-            
-        }
+        guard let currentNum = Int(currentNumSt) else { return }
         plusIntArray.append(currentNum)
         
         relayNum.accept("")
