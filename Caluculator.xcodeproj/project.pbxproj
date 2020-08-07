@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D40AC5724DC001F00CCCF7A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D40AC5624DC001F00CCCF7A /* ViewModel.swift */; };
 		8DF2E8D924DBF8BB009C85C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2E8D824DBF8BB009C85C3 /* AppDelegate.swift */; };
 		8DF2E8DB24DBF8BB009C85C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2E8DA24DBF8BB009C85C3 /* SceneDelegate.swift */; };
 		8DF2E8DD24DBF8BB009C85C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2E8DC24DBF8BB009C85C3 /* ViewController.swift */; };
 		8DF2E8E024DBF8BB009C85C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2E8DE24DBF8BB009C85C3 /* Main.storyboard */; };
 		8DF2E8E224DBF8BC009C85C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2E8E124DBF8BC009C85C3 /* Assets.xcassets */; };
 		8DF2E8E524DBF8BC009C85C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2E8E324DBF8BC009C85C3 /* LaunchScreen.storyboard */; };
+		F318FAAC7F6CC3A52498B51F /* Pods_Caluculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCFE769B85A0177436FC645 /* Pods_Caluculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4714D24082920C3150917AEE /* Pods-Caluculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caluculator.debug.xcconfig"; path = "Target Support Files/Pods-Caluculator/Pods-Caluculator.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8CD4B3C3BCC1086BA866F7 /* Pods-Caluculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caluculator.release.xcconfig"; path = "Target Support Files/Pods-Caluculator/Pods-Caluculator.release.xcconfig"; sourceTree = "<group>"; };
+		6BCFE769B85A0177436FC645 /* Pods_Caluculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caluculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D40AC5624DC001F00CCCF7A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8DF2E8D524DBF8BB009C85C3 /* Caluculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caluculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF2E8D824DBF8BB009C85C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DF2E8DA24DBF8BB009C85C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F318FAAC7F6CC3A52498B51F /* Pods_Caluculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		668048FA180E453BDA54F82F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BCFE769B85A0177436FC645 /* Pods_Caluculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D40AC5324DBFFC900CCCF7A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8DF2E8DC24DBF8BB009C85C3 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8D40AC5424DBFFCF00CCCF7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D40AC5624DC001F00CCCF7A /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D40AC5524DBFFD300CCCF7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8DF2E8CC24DBF8BA009C85C3 = {
 			isa = PBXGroup;
 			children = (
 				8DF2E8D724DBF8BB009C85C3 /* Caluculator */,
 				8DF2E8D624DBF8BB009C85C3 /* Products */,
+				8F62163181831EEFC8D1F036 /* Pods */,
+				668048FA180E453BDA54F82F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +98,24 @@
 			children = (
 				8DF2E8D824DBF8BB009C85C3 /* AppDelegate.swift */,
 				8DF2E8DA24DBF8BB009C85C3 /* SceneDelegate.swift */,
-				8DF2E8DC24DBF8BB009C85C3 /* ViewController.swift */,
+				8D40AC5524DBFFD300CCCF7A /* Model */,
+				8D40AC5424DBFFCF00CCCF7A /* ViewModel */,
+				8D40AC5324DBFFC900CCCF7A /* ViewController */,
 				8DF2E8DE24DBF8BB009C85C3 /* Main.storyboard */,
 				8DF2E8E124DBF8BC009C85C3 /* Assets.xcassets */,
 				8DF2E8E324DBF8BC009C85C3 /* LaunchScreen.storyboard */,
 				8DF2E8E624DBF8BD009C85C3 /* Info.plist */,
 			);
 			path = Caluculator;
+			sourceTree = "<group>";
+		};
+		8F62163181831EEFC8D1F036 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4714D24082920C3150917AEE /* Pods-Caluculator.debug.xcconfig */,
+				5C8CD4B3C3BCC1086BA866F7 /* Pods-Caluculator.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DF2E8E924DBF8BD009C85C3 /* Build configuration list for PBXNativeTarget "Caluculator" */;
 			buildPhases = (
+				136949FC44890C8666D26DF1 /* [CP] Check Pods Manifest.lock */,
 				8DF2E8D124DBF8BB009C85C3 /* Sources */,
 				8DF2E8D224DBF8BB009C85C3 /* Frameworks */,
 				8DF2E8D324DBF8BB009C85C3 /* Resources */,
+				5A939E42A60DD4F54D6540B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +186,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		136949FC44890C8666D26DF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Caluculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A939E42A60DD4F54D6540B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caluculator/Pods-Caluculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caluculator/Pods-Caluculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caluculator/Pods-Caluculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DF2E8D124DBF8BB009C85C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +235,7 @@
 			files = (
 				8DF2E8DD24DBF8BB009C85C3 /* ViewController.swift in Sources */,
 				8DF2E8D924DBF8BB009C85C3 /* AppDelegate.swift in Sources */,
+				8D40AC5724DC001F00CCCF7A /* ViewModel.swift in Sources */,
 				8DF2E8DB24DBF8BB009C85C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +378,7 @@
 		};
 		8DF2E8EA24DBF8BD009C85C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4714D24082920C3150917AEE /* Pods-Caluculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +397,7 @@
 		};
 		8DF2E8EB24DBF8BD009C85C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8CD4B3C3BCC1086BA866F7 /* Pods-Caluculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
